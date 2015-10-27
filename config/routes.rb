@@ -2,8 +2,13 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :listings do
+<<<<<<< HEAD
   	resources :orders, only: [:new, :create]
   end
+=======
+    resources :orders, only: [:new, :create]
+end
+>>>>>>> dccbe76fb942f1b5ec3053981ee83c96b04ddbeb
 
   get 'pages/about'
 
